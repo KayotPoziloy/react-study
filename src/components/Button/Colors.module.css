@@ -1,0 +1,12 @@
+.size {
+  height: auto;
+  width: 100px;
+}
+
+.border {
+  border: 2px solid rgb(178, 178, 178);
+}
+
+.green {
+  background-color: green;
+}
