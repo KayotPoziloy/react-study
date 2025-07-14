@@ -1,1 +1,8 @@
-export default function UserProfile(props) {}
+export default function UserProfile({ name, age }) {
+  return (
+    <>
+      <p>Пользователь: {name}</p>
+      <p>Возраст: {age}</p>
+    </>
+  );
+}
