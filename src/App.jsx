@@ -1,5 +1,6 @@
 import "./App.css";
 import Greeting from "./components/Greeting";
+import LoginStatus from "./components/LoginStatus";
 import UserProfile from "./components/UserProfile";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       {users.map((user) => (
         <UserProfile key={user.id} name={user.name} age={user.age} />
       ))}
+      <LoginStatus isLoggedIn={false} />
     </>
   );
 }
