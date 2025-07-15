@@ -3,12 +3,15 @@ import Button from "./components/Button/Button";
 import Greeting from "./components/Greeting";
 import LoginStatus from "./components/LoginStatus";
 import UserProfile from "./components/UserProfile";
+import Notification from "./components/Notification/Notification";
+import UserInfo from "./components/UserInfo";
 
 function App() {
   const users = [
     { id: 0, name: "Катя", age: 21 },
     { id: 1, name: "Карина", age: 20 },
     { id: 2, name: "Арина", age: 24 },
+    { id: 3, name: "Раф Крутой", age: 21 },
   ];
 
   return (
@@ -20,6 +23,11 @@ function App() {
       ))}
       <LoginStatus isLoggedIn={false} />
       <Button />
+      <Notification type="success" text="Успешно" />
+      <Notification type="error" text="Ошибка" />
+      <Notification type="warning" text="Проверьте данные" />
+      <UserInfo isAdmin={true} />
+      <UserInfo isAdmin={false} />
     </>
   );
 }

@@ -10,3 +10,11 @@
 .green {
   background-color: green;
 }
+
+.on {
+  display: block;
+}
+
+.off {
+  display: none;
+}
