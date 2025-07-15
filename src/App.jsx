@@ -5,6 +5,7 @@ import LoginStatus from "./components/LoginStatus";
 import UserProfile from "./components/UserProfile";
 import Notification from "./components/Notification/Notification";
 import UserInfo from "./components/UserInfo";
+import TaskList from "./components/TaskList";
 
 function App() {
   const users = [
@@ -13,6 +14,8 @@ function App() {
     { id: 2, name: "Арина", age: 24 },
     { id: 3, name: "Раф Крутой", age: 21 },
   ];
+
+  const tasks = ["Learn JSX", "Build a React app", "Explore hooks"];
 
   return (
     <>
@@ -28,6 +31,7 @@ function App() {
       <Notification type="warning" text="Проверьте данные" />
       <UserInfo isAdmin={true} />
       <UserInfo isAdmin={false} />
+      <TaskList tasks={tasks} />
     </>
   );
 }
