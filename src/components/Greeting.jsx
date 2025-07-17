@@ -1,3 +1,9 @@
-export default function Greeting({ name }) {
-    return <p>Привет, {name}</p>
+import { Component } from "react";
+
+class Greeting extends Component {
+  render() {
+    return <p>Привет, {this.props.name}</p>;
+  }
 }
+
+export default Greeting;
