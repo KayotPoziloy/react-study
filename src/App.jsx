@@ -12,6 +12,7 @@ import SimpleList from "./components/SimpleList";
 import { Header, Footer } from "./components/Header";
 import UserCard from "./components/UserCard";
 import ToggleText from "./components/ToggleText";
+import Counter from "./components/Counter";
 
 function App() {
   const users = [
@@ -55,6 +56,7 @@ function App() {
       <SimpleList items={["Apple", "Banana", "Cherry"]} />
       <UserCard name="Давид" age={21} />
       <ToggleText />
+      <Counter />
       <Footer />
     </>
   );
