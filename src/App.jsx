@@ -8,6 +8,7 @@ import UserInfo from "./components/UserInfo";
 import TaskList from "./components/TaskList";
 import Article from "./components/Article";
 import ColoredText from "./components/ColoredText/ColoredText";
+import SimpleList from "./components/SimpleList";
 
 function App() {
   const users = [
@@ -47,6 +48,7 @@ function App() {
       <ColoredText color="blue" />
       <ColoredText color="red" />
       <ColoredText color="green" />
+      <SimpleList items={["Apple", "Banana", "Cherry"]} />
     </>
   );
 }
