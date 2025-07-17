@@ -9,6 +9,7 @@ import TaskList from "./components/TaskList";
 import Article from "./components/Article";
 import ColoredText from "./components/ColoredText/ColoredText";
 import SimpleList from "./components/SimpleList";
+import { Header, Footer } from "./components/Header";
 
 function App() {
   const users = [
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <Greeting name="Петр" />
       <Greeting name="Павел" />
       {users.map((user) => (
@@ -49,6 +51,7 @@ function App() {
       <ColoredText color="red" />
       <ColoredText color="green" />
       <SimpleList items={["Apple", "Banana", "Cherry"]} />
+      <Footer />
     </>
   );
 }
