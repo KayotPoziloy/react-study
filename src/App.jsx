@@ -10,6 +10,7 @@ import Article from "./components/Article";
 import ColoredText from "./components/ColoredText/ColoredText";
 import SimpleList from "./components/SimpleList";
 import { Header, Footer } from "./components/Header";
+import UserCard from "./components/UserCard";
 
 function App() {
   const users = [
@@ -51,6 +52,7 @@ function App() {
       <ColoredText color="red" />
       <ColoredText color="green" />
       <SimpleList items={["Apple", "Banana", "Cherry"]} />
+      <UserCard name="Давид" age={21} />
       <Footer />
     </>
   );
