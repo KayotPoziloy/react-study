@@ -1,20 +1,20 @@
-import { Component } from "react";
+import { Component } from 'react'
 
 export default class Counter extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       count: 0,
-    };
+    }
   }
 
   increase = () => {
-    this.setState((prevState) => ({ count: prevState.count + 1 }));
-  };
+    this.setState((prevState) => ({ count: prevState.count + 1 }))
+  }
 
   decrease = () => {
-    this.setState((prevState) => ({ count: prevState.count - 1 }));
-  };
+    this.setState((prevState) => ({ count: prevState.count - 1 }))
+  }
 
   render() {
     return (
@@ -23,6 +23,6 @@ export default class Counter extends Component {
         <button onClick={this.decrease}>Уменьшить</button>
         <p>{this.state.count}</p>
       </>
-    );
+    )
   }
 }

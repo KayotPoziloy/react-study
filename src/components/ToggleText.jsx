@@ -1,16 +1,16 @@
-import { Component } from "react";
+import { Component } from 'react'
 
 export default class ToggleText extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       isVisible: false,
-    };
+    }
   }
 
   toggleVisibility = () => {
-    this.setState({ isVisible: !this.state.isVisible });
-  };
+    this.setState({ isVisible: !this.state.isVisible })
+  }
 
   render() {
     return (
@@ -18,6 +18,6 @@ export default class ToggleText extends Component {
         <button onClick={this.toggleVisibility}></button>
         {this.state.isVisible ? <p>Скрыть</p> : <p>Показать</p>}
       </div>
-    );
+    )
   }
 }

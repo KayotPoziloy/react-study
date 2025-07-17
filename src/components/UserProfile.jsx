@@ -4,5 +4,5 @@ export default function UserProfile({ name, age }) {
       <p>Пользователь: {name}</p>
       <p>Возраст: {age}</p>
     </>
-  );
+  )
 }

@@ -5,5 +5,5 @@ export default function TaskList({ tasks }) {
         <li key={task}>{task}</li>
       ))}
     </ul>
-  );
+  )
 }

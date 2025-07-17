@@ -5,5 +5,5 @@ export default function SimpleList({ items }) {
         <li key={item}>{item}</li>
       ))}
     </ul>
-  );
+  )
 }

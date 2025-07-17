@@ -1,3 +1,3 @@
 export default function UserInfo({ isAdmin }) {
-  return <p>{isAdmin ? "Администратор" : "Обычный пользователь"}</p>;
+  return <p>{isAdmin ? 'Администратор' : 'Обычный пользователь'}</p>
 }

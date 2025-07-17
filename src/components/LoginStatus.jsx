@@ -7,5 +7,5 @@ export default function LoginStatus({ isLoggedIn }) {
         <p>Пожалуйста, войдите в систему</p>
       )}
     </>
-  );
+  )
 }

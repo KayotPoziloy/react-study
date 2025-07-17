@@ -3,5 +3,5 @@ export default function UserCard({ name, age }) {
     <p>
       {name}: {age}
     </p>
-  );
+  )
 }

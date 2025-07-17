@@ -4,5 +4,5 @@ export default function Article({ title, content }) {
       <h4>{title}</h4>
       <p>{content}</p>
     </div>
-  );
+  )
 }
