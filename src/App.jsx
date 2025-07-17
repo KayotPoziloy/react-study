@@ -7,6 +7,7 @@ import Notification from "./components/Notification/Notification";
 import UserInfo from "./components/UserInfo";
 import TaskList from "./components/TaskList";
 import Article from "./components/Article";
+import ColoredText from "./components/ColoredText/ColoredText";
 
 function App() {
   const users = [
@@ -43,6 +44,9 @@ function App() {
           content="React components let you split the UI into independent parts."
         />
       </div>
+      <ColoredText color="blue" />
+      <ColoredText color="red" />
+      <ColoredText color="green" />
     </>
   );
 }
