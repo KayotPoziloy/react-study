@@ -11,6 +11,7 @@ import ColoredText from "./components/ColoredText/ColoredText";
 import SimpleList from "./components/SimpleList";
 import { Header, Footer } from "./components/Header";
 import UserCard from "./components/UserCard";
+import ToggleText from "./components/ToggleText";
 
 function App() {
   const users = [
@@ -53,6 +54,7 @@ function App() {
       <ColoredText color="green" />
       <SimpleList items={["Apple", "Banana", "Cherry"]} />
       <UserCard name="Давид" age={21} />
+      <ToggleText />
       <Footer />
     </>
   );
