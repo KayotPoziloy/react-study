@@ -6,6 +6,7 @@ import UserProfile from "./components/UserProfile";
 import Notification from "./components/Notification/Notification";
 import UserInfo from "./components/UserInfo";
 import TaskList from "./components/TaskList";
+import Article from "./components/Article";
 
 function App() {
   const users = [
@@ -32,6 +33,16 @@ function App() {
       <UserInfo isAdmin={true} />
       <UserInfo isAdmin={false} />
       <TaskList tasks={tasks} />
+      <div>
+        <Article
+          title="JSX Overview"
+          content="JSX is a syntax extension for JavaScript."
+        />
+        <Article
+          title="React Components"
+          content="React components let you split the UI into independent parts."
+        />
+      </div>
     </>
   );
 }
